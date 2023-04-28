@@ -1,0 +1,49 @@
+Instructions for using the files are described here.
+
+Data for the model are entered and read-out from the "Input-Output Sheet":
+
+Input Values for Original Flows Intersection - section for entering desired data:
+   In this section, user might set the problem with positioning the original flows,
+   choosing the intersection angle between them, choose the buffer coefficient,
+   and enter desired value for the Convective Weather Cell.	
+1. In the cell B2 you can enter desired CWC radius (taking in account 20 NM Safety Buffer).
+2. In the cells B3 and B4 you can set the position of the Flow 1 and Flow 2.
+   Position depends on the value set for "n" from equation y=kx+n.
+   Therefore, Flows could be set to penetrate through the CWC area,
+   or they could be set to be outside of the CWC area.
+3. Intersection angle between the flows is selected from drop down menu in cell B5.
+   Depending on the opened Excel file, angles could be between 1-89 or 90-179 degrees.
+4. Buffer coefficient is selected from the drop down menu in the cell B6 (B could be 1, 5, 10, or 20).
+
+Output Values for Original Flows Intersection - section for read-out only:
+   In this section user could see what are the general information of the set problem from above.
+1. In the cell B8 you can read-out the CZ radius 
+   for original flows intersection angle (not drawn in figures).
+2. In the cell B9 there is information regarding θopt for the selected buffer coeff.
+3. In the cell B10 there is information regarding CZ radius for θopt.
+4. In the cell B13 you can check whether θopt and CZopt could provide feasible solution to the problem.
+   If there is "FlowsOfCZoptNotIntersectW.C.", then solution is feasible for θopt and CZopt.
+   If there is "MoveCZoptFurtherFromW.C.", then solution is infeasible, 
+   so other angles of intersection should be examined.
+5. In the cell B14 there is information on which sheet the problem is correctly presented.
+   The problem could be presented in one of four sheets available:
+   θopt tune case I, θopt tune case II, θopt tune case III, θopt tune case IV.
+
+Input Values for Relocated Flows Intersection - section for entering desired data:
+   In this section user is setting angle of intersection and buffer coefficient 
+   for the relocated flows that are displaced in order to provide circumvention of the CWC.
+1. In the cell B16 you can select desired NEW angle of intersection,
+   which is agnle of relocated flow (DO NOT MIX THIS WITH INTERSECTION OF ORIGINAL FLOW FROM THE ABOVE).
+2. In the cell B17 you can select desired buffer coefficient for intersection of relocated flows.
+
+Output Values for Relocated Flows Intersection - section for read-out only:
+   In this section user could see what are the general information of the relocated flows intersection.
+1. In the cell B19 there is infromation whether selected angle 
+   for relocated flows provides feasible solution.
+   If there is "FlowsOfCZoptNotIntersectW.C.", then solution is feasible for θnew and CZnew.
+   If there is "MoveCZoptFurtherFromW.C.", then solution is infeasible,
+   so other angles of intersection should be examined.
+2. In the cells B21 and B22 there are information regarding CZnew area [Nm²] and CZopt area [Nm²]
+3. Information from the cell B23 shows how larger is CZnew are compared to CZopt area.
+ 	
+
